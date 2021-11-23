@@ -1,13 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Exchange.css";
 
 const Exchange = (props) => {
-  console.log(props.bankName);
   return (
     <div className="container main">
       <div className="row">
-        {props.bankName.map((bank) => (
-          <div className="col-md-4">
+        {props.bankName.map((bank, index) => (
+          <div key={index} className="col-md-4">
             <div class="d-flex justify-content-center profile-card-2 ">
               <div>
                 <div class="text-center mt-2">

@@ -70,7 +70,7 @@ export default function Form(props) {
                     <option value="dkb">DKB</option>
                     <option value="raifeisenbank">Raifeisenbank</option>
                     <option value="waiserbank">Waiserbank</option>
-                    <option value="none">None</option>
+                    <option value="none">None of the above</option>
                   </select>{" "}
                 </div>
                 <div class="form-group col-sm-6 flex-column d-flex">
@@ -94,7 +94,7 @@ export default function Form(props) {
                 <div class="form-group col-sm-6 flex-column d-flex">
                   {" "}
                   <label class="form-control-label px-3">
-                    Mounthly deposit amount<span class="text-danger"> *</span>
+                    Monthly deposit amount<span class="text-danger"> *</span>
                   </label>{" "}
                   <select
                     value={mounthMax}
@@ -127,7 +127,8 @@ export default function Form(props) {
                     <option value="2000">2,000</option>
                     <option value="10000">10,000</option>
                     <option value="20000">20,000</option>
-                    <option value="80000">80,000</option>
+                    <option value="30000">30,000</option>
+                    <option value="50000">50,000</option>
                   </select>{" "}
                 </div>
               </div>

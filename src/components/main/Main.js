@@ -7,6 +7,7 @@ import banks from "../exchange/bankMoke";
 
 const Main = () => {
   const [bankName, setBankName] = useState([]);
+  const [loading, setLodaing] = useState(false);
   const user = useSelector((state) => state.user.payload);
 
   useEffect(() => {
@@ -34,14 +35,22 @@ const Main = () => {
           }
         }
       }
+
+      if (user.resFromDE !== "none") {
+        setBankName(name.filter((item) => item.banks.bankName !== "bitstamp"));
+      } else {
+        setBankName(name);
+      }
+      setLodaing(true);
     }
-    setBankName(name);
   }, [user]);
+
+  console.log(user);
 
   return (
     <>
       <Form setUserDeatils={setUserDeatils} />
-      {bankName && <Exchange bankName={bankName} />}
+      {loading && <Exchange bankName={bankName} />}
     </>
   );
 };

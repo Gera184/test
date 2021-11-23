@@ -8,12 +8,12 @@ const checkboxes = [
   {
     name: "ub",
     key: "Ub",
-    label: "Ub",
+    label: "UB",
   },
   {
     name: "selfies",
     key: "Selfies",
-    label: "Selfies",
+    label: "Selfie",
   },
   {
     name: "sourceOfFunds",
@@ -33,7 +33,7 @@ const checkboxes = [
   {
     name: "drivingLicence",
     key: "Driving licence",
-    label: "Driving licence",
+    label: "Driving Licence",
   },
   {
     name: "passport",
