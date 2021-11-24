@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useLocation } from "react-router";
+import NumberFormat from "react-number-format";
+
 const BankPage = () => {
   const bank = useLocation();
   console.log(bank);
@@ -97,6 +99,34 @@ const BankPage = () => {
                     <i style={{ color: "red" }} class="fas fa-times"></i>
                   </>
                 )}
+              </div>
+            </div>
+            <div className="row pt-5">
+              <div className="col-4">
+                <strong>Daily max limit deposit: </strong>
+                <NumberFormat
+                  value={bank.state.bank.dailyMax}
+                  displayType={"text"}
+                  thousandSeparator={true}
+                  prefix={"€"}
+                />
+              </div>
+              <div className="col-4">
+                <strong>Monthly max limit deposit: </strong>
+                <NumberFormat
+                  value={bank.state.bank.mounthMax}
+                  displayType={"text"}
+                  thousandSeparator={true}
+                  prefix={"€"}
+                />
+              </div>
+              <div className="col-4">
+                <strong>Maximum age limit: </strong>
+                <NumberFormat
+                  value={bank.state.bank.maxAge}
+                  displayType={"text"}
+                  thousandSeparator={true}
+                />
               </div>
             </div>
             <div className="row pt-5">
