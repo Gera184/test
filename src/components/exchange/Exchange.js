@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Exchange.css";
 
 const Exchange = (props) => {
@@ -10,11 +11,13 @@ const Exchange = (props) => {
             <div class="d-flex justify-content-center profile-card-2 ">
               <div>
                 <div class="text-center mt-2">
-                  <img
-                    className="img-thumbnail rounded mx-auto d-block"
-                    src={bank.banks.image}
-                    style={{ height: "300px", width: "100%" }}
-                  />
+                  <Link to={`/${index}`} state={{ bank: bank.banks }}>
+                    <img
+                      className="img rounded mx-auto d-block"
+                      src={bank.banks.image}
+                      style={{ height: "200px", width: "100%" }}
+                    />
+                  </Link>
                   <div className="p-3">
                     <h1
                       style={{
@@ -23,7 +26,7 @@ const Exchange = (props) => {
                         textShadow: "0px 2px 3px black",
                       }}
                     >
-                      {bank.banks.bankName}
+                      {/* {bank.banks.bankName} */}
                     </h1>
                   </div>
                 </div>

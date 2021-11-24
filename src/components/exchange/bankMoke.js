@@ -61,7 +61,7 @@ const banks = [
     ub: true,
     camera: false,
     image:
-      "https://w7.pngwing.com/pngs/510/339/png-transparent-kraken-cryptocurrency-exchange-bitcoin-cash-bitcoin-text-logo-exchange.png",
+      "https://www.forexmt4indicators.com/wp-content/uploads/2018/03/Kraken-Cryptocurrency-Exchange-Review.jpg",
   },
   {
     bankName: "simplex",
@@ -125,7 +125,7 @@ const banks = [
     ub: false,
     camera: true,
     image:
-      "https://cdn.shopify.com/s/files/1/0381/5912/2476/files/cm_logo_ccolors_800x.png?v=1595700201",
+      "https://d1mjtvp3d1g20r.cloudfront.net/2018/10/14121500/27067605_173246179960686_5284388976462540002_n.png",
   },
   {
     bankName: "ftx",

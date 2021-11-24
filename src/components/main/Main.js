@@ -45,8 +45,6 @@ const Main = () => {
     }
   }, [user]);
 
-  console.log(user);
-
   return (
     <>
       <Form setUserDeatils={setUserDeatils} />
